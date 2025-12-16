@@ -39,9 +39,22 @@ window.Portals.renderDashboard = function (container) {
             </div>
              <div class="glass-card" style="padding: 1.5rem; background: var(--sidebar-bg); border-radius: 1rem;">
                 <h3>Quick Actions</h3>
-                 <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
-                    <button class="btn-primary" onclick="document.querySelector('[data-portal=student-registration]').click()" style="font-size: 0.8rem;">Add Student</button>
-                    <button class="btn-primary" onclick="window.print()" style="background: var(--sidebar-bg); border: 1px solid var(--accent-color); font-size: 0.8rem;">Print Report</button>
+                 <div style="display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap;">
+                    <button class="btn-primary" onclick="document.querySelector('[data-portal=student-registration]').click()" style="flex: 1 1 120px; font-size: 0.8rem; text-align: center; padding: 0.75rem 0.5rem;">
+                        <i class="fa-solid fa-user-plus" style="margin-bottom: 0.3rem; display: block; font-size: 1.2rem;"></i> Register Student
+                    </button>
+                    <button class="btn-primary" onclick="document.querySelector('[data-portal=student-records]').click()" style="flex: 1 1 120px; font-size: 0.8rem; text-align: center; padding: 0.75rem 0.5rem; background: var(--sidebar-bg); border: 1px solid var(--accent-color);">
+                        <i class="fa-solid fa-address-book" style="margin-bottom: 0.3rem; display: block; font-size: 1.2rem; color: var(--accent-color);"></i> Find Student
+                    </button>
+                    <button class="btn-primary" onclick="document.querySelector('[data-portal=student-attendance]').click()" style="flex: 1 1 120px; font-size: 0.8rem; text-align: center; padding: 0.75rem 0.5rem; background: var(--sidebar-bg); border: 1px solid var(--success);">
+                        <i class="fa-solid fa-clipboard-user" style="margin-bottom: 0.3rem; display: block; font-size: 1.2rem; color: var(--success);"></i> Attendance
+                    </button>
+                    <button class="btn-primary" onclick="document.querySelector('[data-portal=student-fees]').click()" style="flex: 1 1 120px; font-size: 0.8rem; text-align: center; padding: 0.75rem 0.5rem; background: var(--sidebar-bg); border: 1px solid var(--warning);">
+                        <i class="fa-solid fa-credit-card" style="margin-bottom: 0.3rem; display: block; font-size: 1.2rem; color: var(--warning);"></i> Fee Portal
+                    </button>
+                     <button class="btn-primary" onclick="document.querySelector('[data-portal=student-exams]').click()" style="flex: 1 1 120px; font-size: 0.8rem; text-align: center; padding: 0.75rem 0.5rem; background: var(--sidebar-bg); border: 1px solid #a855f7;">
+                        <i class="fa-solid fa-file-signature" style="margin-bottom: 0.3rem; display: block; font-size: 1.2rem; color: #a855f7;"></i> Exams Portal
+                    </button>
                  </div>
             </div>
         </div>

@@ -29,7 +29,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             const portalName = link.getAttribute('data-portal');
             loadPortal(portalName);
         });
+
     });
+
+    // Sidebar Toggle
+    const toggleBtn = document.getElementById('sidebar-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    if (toggleBtn && sidebar) {
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('collapsed');
+        });
+    }
 
     // 2. Load Default
     loadPortal('dashboard');
