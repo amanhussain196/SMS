@@ -128,7 +128,7 @@ window.Portals.renderStudentRecords = function (container) {
                 <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
                     <td style="padding: 1rem; font-weight: bold; color: var(--accent-color);">${student.student_code || 'N/A'}</td>
                     <td style="padding: 1rem;">${student.full_name}</td>
-                    <td style="padding: 1rem;">Grade ${student.class_grade}</td>
+                    <td style="padding: 1rem;">Grade ${student.class_grade} <span style="opacity: 0.7; font-size: 0.8em;">(Roll: ${student.roll_number || '-'})</span></td>
                     <td style="padding: 1rem;">${student.address || '-'}</td>
                     <td style="padding: 1rem;">${student.father_name || '-'}</td>
                     <td style="padding: 1rem;">${student.father_contact || '-'}</td>

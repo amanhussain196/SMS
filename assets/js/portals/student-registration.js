@@ -161,7 +161,13 @@ window.Portals.renderStudentRegistration = function (container) {
                     <div style="font-size: 2.5rem; font-weight: 800; color: white; margin: 0.5rem 0; letter-spacing: 2px;">
                         ${result.student_code}
                     </div>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Please note this ID for future reference.</p>
+                    <div style="margin: 1rem 0; padding: 1rem; background: rgba(0,0,0,0.2); border-radius: 0.5rem; display: inline-block;">
+                        <p style="color: var(--text-secondary); margin-bottom: 0.2rem; font-size: 0.9rem;">Class Roll Number</p>
+                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">
+                            #${result.roll_number} <span style="font-size: 0.8rem; opacity: 0.7; font-weight: normal;">(Grade ${result.class_grade})</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Please note this ID and Roll Number for future reference.</p>
                 </div>`;
             form.reset();
             loadPreviewId(); // Refresh for next student
