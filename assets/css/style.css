@@ -28,6 +28,12 @@ body {
     /* App-like feel */
 }
 
+@media (max-width: 768px) {
+    body {
+        zoom: 0.55;
+    }
+}
+
 /* Layout */
 .app-container {
     display: flex;
